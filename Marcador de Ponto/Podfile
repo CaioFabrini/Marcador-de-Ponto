@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Marcador de Ponto' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Marcador de Ponto
+
+  target 'Marcador de PontoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Marcador de PontoUITests' do
+    # Pods for testing
+  end
+
+   pod 'Firebase'
+   pod 'SnapKit'
+
+end

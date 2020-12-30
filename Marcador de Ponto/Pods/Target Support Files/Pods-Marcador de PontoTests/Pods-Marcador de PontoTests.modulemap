@@ -1,0 +1,6 @@
+framework module Pods_Marcador_de_PontoTests {
+  umbrella header "Pods-Marcador de PontoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
