@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginVC: BaseViewController {
+class LoginVC: BaseViewController{
   
     let screen = LoginScreen()
     override func loadView() {
@@ -16,9 +16,16 @@ class LoginVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        screen.loginTextField.delegate = self
     }
+        
+}
 
-
+extension LoginVC:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        self.view = screen
+        return true
+    }
 }
 
